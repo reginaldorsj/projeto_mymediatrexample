@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="DAO\" />
+    <Folder Include="BO\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyMediatRExample.OR\MyMediatRExample.OR.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Regisoft">
+      <HintPath>..\..\Regisoft.Core\Regisoft.Camadas.Interface\bin\Release\net5.0\Regisoft.dll</HintPath>
+    </Reference>
+    <Reference Include="Regisoft.Camadas">
+      <HintPath>..\..\Regisoft.Core\Regisoft.Camadas\bin\Release\net5.0\Regisoft.Camadas.dll</HintPath>
+    </Reference>
+    <Reference Include="Regisoft.Camadas.Interface">
+      <HintPath>..\..\Regisoft.Core\Regisoft.Camadas.Interface\bin\Release\net5.0\Regisoft.Camadas.Interface.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

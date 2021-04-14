@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <configSections>
+    <section name="hibernate-configuration" type="NHibernate.Cfg.ConfigurationSectionHandler, NHibernate" />
+  </configSections>
+  <hibernate-configuration xmlns="urn:nhibernate-configuration-2.2">
+    <session-factory>
+      <property name="connection.isolation">ReadCommitted</property>
+      <property name="current_session_context_class">call</property>
+      <property name="show_sql">true</property>
+      <property name="connection.provider">NHibernate.Connection.DriverConnectionProvider</property>
+      <property name="dialect">NHibernate.Dialect.FirebirdDialect</property>
+      <property name="connection.driver_class">NHibernate.Driver.FirebirdClientDriver</property>
+      <property name="connection.connection_string">Server=localhost;User=sysdba;Password=pandora;Database=mymediatrexample_db</property>
+      <mapping assembly="MyMediatRExample.OR"/>
+    </session-factory>
+  </hibernate-configuration>
+</configuration>

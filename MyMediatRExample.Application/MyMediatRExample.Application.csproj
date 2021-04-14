@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyMediatRExample.Domain\MyMediatRExample.Domain.csproj" />
+    <ProjectReference Include="..\MyMediatRExample.Infrastructure\MyMediatRExample.Infrastructure.csproj" />
+    <ProjectReference Include="..\MyMediatRExample.OR\MyMediatRExample.OR.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Regisoft">
+      <HintPath>..\..\Regisoft.Core\Regisoft.Camadas.Interface\bin\Release\net5.0\Regisoft.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

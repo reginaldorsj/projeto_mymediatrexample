@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Unity" Version="5.11.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyMediatRExample.DAO\MyMediatRExample.DAO.csproj" />
+    <ProjectReference Include="..\MyMediatRExample.Interface\MyMediatRExample.Interface.csproj" />
+    <ProjectReference Include="..\MyMediatRExample.OR\MyMediatRExample.OR.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Regisoft">
+      <HintPath>..\..\Regisoft.Core\Regisoft.Camadas.Interface\bin\Release\net5.0\Regisoft.dll</HintPath>
+    </Reference>
+    <Reference Include="Regisoft.Camadas">
+      <HintPath>..\..\Regisoft.Core\Regisoft.Camadas\bin\Release\net5.0\Regisoft.Camadas.dll</HintPath>
+    </Reference>
+    <Reference Include="Regisoft.Camadas.Interface">
+      <HintPath>..\..\Regisoft.Core\Regisoft.Camadas.Interface\bin\Release\net5.0\Regisoft.Camadas.Interface.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

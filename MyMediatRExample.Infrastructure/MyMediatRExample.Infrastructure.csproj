@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyMediatRExample.BO\MyMediatRExample.BO.csproj" />
+    <ProjectReference Include="..\MyMediatRExample.Interface\MyMediatRExample.Interface.csproj" />
+    <ProjectReference Include="..\MyMediatRExample.OR\MyMediatRExample.OR.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Regisoft">
+      <HintPath>..\..\Regisoft.Core\Regisoft.Camadas.Interface\bin\Release\net5.0\Regisoft.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

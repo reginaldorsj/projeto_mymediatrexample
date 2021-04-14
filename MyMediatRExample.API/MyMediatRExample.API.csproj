@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyMediatRExample.Application\MyMediatRExample.Application.csproj" />
+    <ProjectReference Include="..\MyMediatRExample.Infrastructure\MyMediatRExample.Infrastructure.csproj" />
+    <ProjectReference Include="..\MyMediatRExample.OR\MyMediatRExample.OR.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Regisoft">
+      <HintPath>..\..\Regisoft.Core\Regisoft.Camadas.Interface\bin\Release\net5.0\Regisoft.dll</HintPath>
+    </Reference>
+    <Reference Include="Regisoft.AspNetCore">
+      <HintPath>..\..\Regisoft.Core\Regisoft.AspNetCore\bin\Release\net5.0\Regisoft.AspNetCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
